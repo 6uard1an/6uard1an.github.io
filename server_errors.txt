@@ -1,0 +1,44 @@
+Exception calling "ReadAllBytes" with "1" argument(s): "The process cannot access the file 'C:\Users\meirt\Downloads\Windows10\Program Files\Moto X3M\motox3m4.min.js' because it is being used by another process."
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "ReadAllBytes" with "1" argument(s): "The process cannot access the file 'C:\Users\meirt\Downloads\Windows10\Program Files\Moto X3M\motox3m4.min.js' because it is being used by another process."
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "ReadAllBytes" with "1" argument(s): "The process cannot access the file 'C:\Users\meirt\Downloads\Windows10\Program Files\Moto X3M\motox3m4.min.js' because it is being used by another process."
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+

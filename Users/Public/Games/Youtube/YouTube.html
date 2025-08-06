@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--made by Meir BarSela-->
+<head><link rel="icon" type="image/x-icon" href="favicon.ico"></head>
+<button id="fullscreen" onclick="fullscreen()">⛶</button>
+<html id="page" lang="en-US">
+    <link href="YouTube.css" rel="stylesheet">
+    <header id="header">
+        <div id="myheader" position="obsolute">
+        </div>
+        <!--input-->
+        <div id="ytsearchcontainer">
+<button id="search-icon-legacy">
+  <yt-icon class="style-scope ytd-searchbox"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z"></path></g></svg></yt-icon>
+  <tp-yt-paper-tooltip prefix="" class="style-scope ytd-searchbox" role="tooltip" tabindex="-1" style="left: 290px; top: 62px;">
+</tp-yt-paper-tooltip>
+</button>
+<input id="ytidfurl" dir="rtl" placeholder='YouTube Video URL' onchange="updateVideoIdURL()">
+</div><img id="logo" onclick="logoC()" src="YouTube logo.png" height="22" width="100"><span id="navbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </header>
+    <!--sidenavigation-->
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <font size="2">Darkmode</font>
+    <br>
+    <label class="switch">
+        <input id="Switch" type="checkbox" onclick=darkMode()>
+        <span class="slider round">
+        </span>
+    </label>
+</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Meir Bar-Sela">
+    <meta name="keywords" content="Working, YouTube, for when it doesn't work">
+    <meta name="description" content="Working Youtube">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Youtube</title>
+  </head>
+    <br>
+    <br>
+    <body>
+    <!--Current video-->
+    <section class="currentVideo">
+        <article>
+            <section id="videoSection">
+                <div id="mydiv">
+                <div id="mydivheader">
+                    <img src="Youtube Icon.png" height="15" width="21"/>
+                    <input id="BackGroundColor" name="BackGroundColor" type="color" onchange="submitBgColor()">
+                </div>
+                <iframe name="video" id="ytvid" width="420" height="236" src="https://www.youtube.com/embed/" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            </section>
+            <!--recommended videos-->
+            <section id="recommendationsSection">
+                <iframe id="ytrecommended" class="recommendedvideos" src="https://www.youtube.com/embed/?start=999999&autoplay=1&mute=1">
+                </iframe>
+            </section>
+        </article>
+    </section>
+    <iframe class="recommendedvideos" width="1280" height="720" src="https://www.youtube.com/embed/Tjs1guuaaDM?start=999999&autoplay=1&mute=1">
+    </iframe>
+    <iframe class="recommendedvideos" width="1280" height="720" src="https://www.youtube.com/embed/LnlKwzc_TNA?start=999999&autoplay=1&mute=1">
+    </iframe>
+    <iframe class="recommendedvideos" width="1280" height="720" src="https://www.youtube.com/embed/h3IRjTJWWbY?start=999999&autoplay=1&mute=1">
+    </iframe>
+    <iframe class="recommendedvideos" width="1280" height="720" src="https://www.youtube.com/embed/QsUfsZzxi9c?start=999999&autoplay=1&mute=1">
+    </iframe>
+    <iframe class="recommendedvideos" width="1280" height="720" src="https://www.youtube.com/embed/yxmvG3M7ays?start=999999&autoplay=1&mute=1">
+    </iframe>
+    <iframe class="recommendedvideos" width="1280" height="720" src="https://www.youtube.com/embed/aGpvCFJKq_A?start=999999&autoplay=1&mute=1">
+    </iframe>
+    </body>
+    <footer>
+    </footer>
+    <script src="YouTube.js"></script>
+</html>

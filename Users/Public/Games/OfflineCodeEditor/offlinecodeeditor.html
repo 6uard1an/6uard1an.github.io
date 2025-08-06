@@ -1,0 +1,37 @@
+<body  onload="pageload()"></body><link href="style.css" rel="stylesheet">
+<header>
+<button id="play" onclick="play()">▷ Play</button>
+<button id="fullscreen" onclick="fullscreen()">⛶</button>
+</header>
+<div id="files">
+<br>
+<button name="html" onclick="html()"><span>⟨ ⟩</span>HTML</button>
+<br><br>
+<button name="css" onclick="css()"><span>#</span>CSS</button>
+<br><br>
+<button name="js" onclick="js()"><span>{ }</span>JS</button>
+</div>
+<div class="input" width="%" height="100%">
+<textarea id="htmleditor" height="100%" width="100%" oninput="play()" spellcheck="false">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML Page</title>
+  </head>
+  <body>
+    <h1>My HTML Page</h1>
+    <p>This is my HTML page.</p>
+  </body>
+</html>
+</textarea>
+<textarea id="csseditor" height="100%" width="100%" oninput="play()" spellcheck="false">
+/*Css*/
+</textarea>
+<textarea id="jseditor" height="100%" width="100%" oninput="play()" spellcheck="false">
+//js
+console.log("Hello World!");
+</textarea>
+</div>
+<div id="output"></div>
+<div id="console">Console<button id="clearconsole" onclick="clearconsole()">Clear</button></div><div id="log"></div>
+<script src="script.js"></script>

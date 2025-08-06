@@ -1,0 +1,70 @@
+<script>
+    console.log("Hostname:", window.location.hostname);
+console.log("Protocol:", window.location.protocol);
+console.log("Origin:", window.location.origin);
+
+</script><!-- Needed scripts in order to run applications-->
+	<script src="../app/jquery-3.4.1.min.js"></script>
+	<script src="../app/app-localization.js"></script>
+	<script src="../app/functions.js"></script>
+	<script src="../app/helpers.js"></script>
+	<script src="../app/tool-options.js"></script>
+	<script src="../app/tools.js"></script>
+	<script src="../app/app.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    <title>MotoX3M</title>
+    <style>
+        #canvas-fallback {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="canvas-fallback">
+        This game must be run on <br>HTTPS <br> or <br>localhost.<br>Please reload using a secure connection.
+    </div>
+
+    <div id="content"></div>
+    <div id="orientation"></div>
+    <div id="loader">Loading ...</div>
+
+    <script type="text/javascript" src="assets/box2dweb/nape.min.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/easeljs-0.8.2.combined.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/phaser.min.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/phaser-cachebuster.min.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/phaser-super-storage.min.js"></script>
+    <script type="text/javascript" src="assets/box2dweb/dragonBones.min.js"></script>
+    <script type="text/javascript" src="motox3m4.min.js?63dadbca95f80f923c69"></script>
+
+    <script>
+        if (window.isSecureContext) {
+            const fallback = document.getElementById("canvas-fallback");
+            if (fallback) fallback.remove();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.LogoBorder
+{
+  position:absolute;
+  width: 454px; 
+  height: 360px; 
+  border-bottom: 0px solid #000; 
+  overflow: hidden;
+  left:75px;
+  top:75px;
+  transition: 1s;
+}
+.Logo
+{ border-radius: 10%;
+  position: relative; 
+  overflow: hidden; 
+  transform: rotate(45deg) skew(10deg,10deg); 
+  width: 400px;
+  height: 400px;
+  margin:81px 0 0 16px;
+}
+
+.LogoImage
+{
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -42%;
+  left: -42%;
+  z-index: -1;
+  background-color: #0B3347;
+  background-image: url(GAMES.png);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position:50% 30%;
+  transform: skew(-10deg,-10deg) rotate(-45deg) ;
+}

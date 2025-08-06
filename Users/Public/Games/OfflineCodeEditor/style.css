@@ -1,0 +1,24 @@
+header {background-color:#ececec;position:absolute;top:0;left:0;height:10%;width:100%}
+#files {background-color:#191919;position:absolute;bottom:0;left:0;height:90%;width:10%;}
+#files button {font:left; font-size:10;font-stretch:condensed;color:#484848;font-weight:lighter;border:0;border-radius:10px;padding:5px 1px;width:100%;}
+#files button span {position:absolute;left:5;color:black;font-weight:1000;}
+#files button[name='html'] {background-color:#ff5125;}
+#files button[name='css'] {background-color:#147CBC;}
+#files button[name='js'] {background-color:#ffad25;}
+#files button:hover {cursor:pointer;}
+.input {background-color:#202020;position:absolute;bottom:0;left:10%;height:90%;width:40%}
+.input textarea {background-color:inherit;position:absolute;bottom:18%;left:0%;height:82%;width:100%;border:0;}
+#htmleditor {color:#40ec6b;}
+#csseditor {color:#9876AD;}
+#jseditor {color:#147CBC;}
+#output {overflow-y:scroll;position:absolute;bottom:0;right:0;height:90%;width:50%}
+#output:fullscreen {background-color:#ffffff;}
+#play {position:absolute;top:0;right:50;background-color:#ffab33;color:#ffffff;font-weight:bold;border:0;border-radius:48px;padding:5px 22px;}
+#play:hover {background-color:#fd923b;cursor:pointer;}
+#fullscreen {position:absolute;top:0;right:15;background-color:none;color:#474747;border:0;font-weight:bold}
+#fullscreen:hover {cursor:pointer;}
+#console {background-color:#404040;color:#9c9c9c;font-family:menlo regular,Consolas,Inconsolata,vera sans,lucida console,Courier,monospace,fixed;font-size:12;font-weight:1000;position:absolute;bottom:11%;left:10%;height:4%;width:100%}
+#clearconsole {background:#222;color:#ffffff;font-family: open sans,sans-serif;margin:0 0 0 12px;outline:none;padding:1px 8px;border:none;font-weight:600;border-radius:12px;background:rgba(255,255,255,.5);color: rgba(0,0,0,.4);}
+#clearconsole:hover {color:white;cursor:pointer;}
+#clearconsole:active {background:rgba(199, 199, 199, 0.5);}
+#log {overflow-y:scroll;background-color:#202020;color:#ffffff;font-family:menlo regular,Consolas,Inconsolata,vera sans,lucida console,Courier,monospace,fixed;position:absolute;bottom:0;left:10%;height:11%;width:100%}

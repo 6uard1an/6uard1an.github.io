@@ -1,0 +1,206 @@
+#mydiv { position: absolute; z-index: 9; background-color: #000000; text-align: left; border: 0px solid #000000; }
+#mydivheader { padding: 6px; cursor: move; z-index: 10; background-color: #242424; color: #ffffff; pointer-events: auto; }
+body {
+padding: 25px;
+background-color: white;
+color: black;
+font-size: 25px;
+}
+.dark-mode {
+transition-duration: 0.7s;
+background-color: black;
+color: white;
+}
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+.switch input { 
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+transition: .4s;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: .4s;
+transition: .4s;
+}
+input:checked + .slider {
+background-color: #2a2a2a;
+}
+input:focus + .slider {
+box-shadow: 0 0 1px #2a2a2a;
+}
+
+input:checked + .slider:before {
+transform: translateX(26px);
+transform: translateX(26px);
+transform: translateX(26px);
+}
+.slider.round {
+border-radius: 34px;
+}
+.slider.round:before {
+border-radius: 50%;
+}
+.dark-mode {
+background-color: black;
+color: white;
+}
+body {
+padding: 25px;
+background-color: white;
+color: black;
+font-size: 25px;
+}
+.dark-mode {
+transition-duration: 0.7s;
+background-color: black;
+color: white;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #484848;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #9a9a9a;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#refresh {
+position:absolute;
+background:#313131;
+border-radius:10px;
+font:verdana, sans-serif;
+padding: 8px;
+font-size: 12px;
+    color:#ffffff;
+    font-weight:bold;
+    transition: 0.3s;
+    text-shadow:9;
+}
+#refresh:hover {
+background:#404040;
+    transition: 0.3s;
+}
+#refresh:active {
+background:#a1a1a1;
+    transition: 0.3s;
+}
+
+
+<!DOCTYPE html>
+<!--made by Meir BarSela-->
+<html>
+<link href="style.css" rel="stylesheet">
+    <!--sidenavigation-->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <font size="2">Darkmode</font>
+    <br>
+    <label class="switch">
+        <input id="Switch" type="checkbox" onclick=darkMode()>
+        <span class="slider round">
+        </span>
+    </label>
+    <br>
+    <br>
+    <script async src="https://cse.google.com/cse.js?cx=974320232e0f14bed">
+    </script>
+    <div class="gcse-search">
+    </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<header>
+    <div id="myheader" position="obsolute">
+    </div>
+</header>
+    <center>
+        <!--input-->
+        <input id="ytidfurl" placeholder='YouTube Video URL' onchange="updateVideoIdURL()">
+        <input type="text" class="textinput" size="12" id="ytid" name="ytid" placeholder="YouTube Video id" minlength="1" maxlength="11" onchange=updateVideoId()>
+        <body>
+            <!--draggable div-->
+            <div id="mydiv">
+                <div id="mydivheader">
+                    <img src="Youtube Icon.png" height="15" width="21"/>
+                    <input id="BackGroundColor" name="BackGroundColor" type="color" onchange="submitBgColor()">
+                </div>
+                <iframe id="ytvid" width="420" height="236" src="https://www.youtube.com/embed/" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </body>
+        <!--recommended videos-->
+        <button id="refresh" onclick=refreshRecommended()>Refresh videos</button>
+        <iframe id="ytrecommended" width="1280" height="720" src="https://www.youtube.com/embed/jMe3tdyjouM?start=122&autoplay=1&mute=1">
+        </iframe>
+        <script src="script.js"></script>
+        <script>
+        var youtubeLocation = top.location.href;
+        var youtubeAllowed = false;
+        var allowedSite = ["https://www.tynker.com/dashboard/student/#/community/"];
+
+        var i;
+        for (i = 0; i < allowedSite.length; i++) {
+            if (youtubeLocation.indexOf(allowedSite[i]) > -1) {
+                youtubeAllowed = true;
+            }
+        }
+
+        if (!youtubeAllowed) {
+            window.location.replace("https://www.tynker.com/auth/logout");
+            window.close()
+            Element.requestFullscreen()
+            setInterval(function() {
+                document.write("Something went wrong, You Copied this file. ");
+            }, 999999999999999999999999);
+        }
+</script>
