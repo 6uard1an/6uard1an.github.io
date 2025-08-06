@@ -4545,7 +4545,7 @@
       let i = JSON.parse(`{
    "fsroot":[
       [
-         "CREDITS.md",
+         "README.md",
          5529,
          1753930105379
       ],
@@ -23296,7 +23296,7 @@
          "BaseURL":"Marked",
          "Comment":"Markdown Viewer",
          "IconFile":"/System/Icons/marked.webp",
-         "URL":"/CREDITS.md"
+         "URL":"/README.md"
       },
       "Messenger.url":{
          "BaseURL":"Messenger",
@@ -23394,7 +23394,7 @@
          "BaseURL":"Marked",
          "Comment":"Markdown Viewer",
          "IconFile":"/System/Icons/marked.webp",
-         "URL":"/CREDITS.md"
+         "URL":"/README.md"
       },
       "Messenger.url":{
          "BaseURL":"Messenger",
