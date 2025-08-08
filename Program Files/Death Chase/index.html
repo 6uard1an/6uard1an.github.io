@@ -1,0 +1,72 @@
+<!-- Needed scripts in order to run applications-->
+	<script src="../app/jquery-3.4.1.min.js"></script>
+	<script src="../app/app-localization.js"></script>
+	<script src="../app/functions.js"></script>
+	<script src="../app/helpers.js"></script>
+	<script src="../app/tool-options.js"></script>
+	<script src="../app/tools.js"></script>
+	<script src="../app/app.js"></script>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="noindex,nofollow" name=robots>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Death Chase</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/jquery-3.4.5.min.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/xx1.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+  <div class="webgl-content">
+    <div id="gameContainer"></div>
+  </div>
+
+  <script>
+    function Load() {
+      let canPlay = true;
+      if (canPlay) return;
+      setTimeout(() => {
+        setInterval(function () {
+          document.write("<div style='position:relative;display:inline-block;padding:0.5vw;margin:0.5vw;border:0.3vw solid red;border-radius:1vw;background:indigo;font-family:sans-serif;font-size:3vw;font-weight:700;'><a style='color:yellow;text-decoration:none;' href='#'>Play&nbsp;this&nbsp;game&nbsp;on&nbsp;the&nbsp;official&nbsp;site!</a></div>");
+        }, 500);
+      }, 999);
+    }
+    Load()
+
+    const doResize = true;
+    const focusWindow = true;
+    const timedReloadEnabled = false;
+    const auxSetting = false;
+
+
+
+    function resizeGameCanvas() {
+      const canvas = document.querySelector("canvas");
+
+      if (canvas) {
+        canvas.style.maxWidth = "100vw";
+        canvas.style.maxHeight = "100vh";
+      }
+    }
+
+    if (doResize) {
+      const canvasInterval = setInterval(resizeGameCanvas, 1500);
+    }
+
+    if (focusWindow) {
+      window.addEventListener('blur', () => {
+        window.focus();
+      });
+    }
+  </script>
+</body>
+
+</html>

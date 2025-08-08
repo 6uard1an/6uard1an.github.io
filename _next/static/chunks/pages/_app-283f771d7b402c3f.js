@@ -14783,6 +14783,16 @@
                            1753930107528
                         ],
                         [
+                           "DashCraft.url",
+                           108,
+                           1753930107528
+                        ],
+                        [
+                           "Death Chase.url",
+                           108,
+                           1753930107528
+                        ],
+                        [
                            "Moto X3M.url",
                            108,
                            1753930107528
@@ -14900,6 +14910,7 @@
   ["Extreme Pamplona.swf"],
   ["Farafalla.swf"],
   ["Fireboy and Watergirl.swf"],
+  ["Happy Wheels.swf"],
   ["I Wanna Win.swf"],
   ["Jelly Truck.swf"],
   ["Mini Scientist.swf"],
@@ -15035,6 +15046,16 @@
                         ],
                         [
                            "Crazy Cattle 3D.url",
+                           97,
+                           1753930107536
+                        ],
+                        [
+                           "DashCraft.url",
+                           97,
+                           1753930107536
+                        ],
+                        [
+                           "Death Chase.url",
                            97,
                            1753930107536
                         ],
@@ -23282,6 +23303,16 @@
          "Comment":"Play Crazy Cattle 3D.",
          "IconFile":"/Program Files/Crazy Cattle 3D/CrazyCattle3D.icon.png"
       },
+      "DashCraft.url":{
+         "BaseURL":"DashCraft",
+         "Comment":"Play DashCraft.",
+         "IconFile":"/Program Files/DashCraft/assets/icons/favicon-32x32.png"
+      },
+      "Death Chase.url":{
+         "BaseURL":"Death Chase",
+         "Comment":"Play Death Chase.",
+         "IconFile":"/Program Files/Death Chase/square-gamethumb-1-deathchase.png"
+      },
       "Moto X3M.url":{
          "BaseURL":"Moto X3M",
          "Comment":"Play Moto X3M.",
@@ -23379,6 +23410,16 @@
          "BaseURL":"Crazy Cattle 3D",
          "Comment":"Play Crazy Cattle 3D.",
          "IconFile":"/Program Files/Crazy Cattle 3D/CrazyCattle3D.icon.png"
+      },
+      "DashCraft.url":{
+         "BaseURL":"DashCraft",
+         "Comment":"Play DashCraft.",
+         "IconFile":"/Program Files/DashCraft/assets/icons/favicon-32x32.png"
+      },
+      "Death Chase.url":{
+         "BaseURL":"Death Chase",
+         "Comment":"Play Death Chase.",
+         "IconFile":"/Program Files/Death Chase/square-gamethumb-1-deathchase.png"
       },
       "Moto X3M.url":{
          "BaseURL":"Moto X3M",
@@ -31618,6 +31659,30 @@
           singleton: !0,
           libs: ["/Program Files/Crazy Cattle 3D/index.html"],
           title: "Crazy Cattle 3D"
+        },
+        "DashCraft": {
+          Component: i()(() => n.e(4231, "high").then(n.bind(n, 44231)), {
+            loadableGenerated: { webpack: () => [44231] },
+          }),
+          backgroundColor: "#111",
+          defaultSize: { height: 500, width: 666 },
+          icon: "/Program Files/DashCraft/assets/icons/favicon-32x32.png",
+          initialRelativePosition: { bottom: o.D5 + 11, left: 15 },
+          singleton: !0,
+          libs: ["/Program Files/DashCraft/index.html"],
+          title: "DashCraft"
+        },
+        "Death Chase": {
+          Component: i()(() => n.e(4231, "high").then(n.bind(n, 44231)), {
+            loadableGenerated: { webpack: () => [44231] },
+          }),
+          backgroundColor: "#111",
+          defaultSize: { height: 500, width: 666 },
+          icon: "/Program Files/Death Chase/square-gamethumb-1-deathchase.png",
+          initialRelativePosition: { bottom: o.D5 + 11, left: 15 },
+          singleton: !0,
+          libs: ["/Program Files/Death Chase/index.html"],
+          title: "Death Chase"
         },
         "Moto X3M": {
           Component: i()(() => n.e(4231, "high").then(n.bind(n, 44231)), {
