@@ -6,6 +6,15 @@
 	<script src="../app/tool-options.js"></script>
 	<script src="../app/tools.js"></script>
 	<script src="../app/app.js"></script>
+  <script>
+(function () {
+  if (window.location.hostname !== "localhost") {
+    console.error("🚫 Not running on localhost — stopping all scripts");
+    window.stop();
+    document.location.href = "sitelock.html";
+  }
+})();
+</script>
 <!DOCTYPE html>
 <html lang="en-us">
 

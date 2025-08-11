@@ -42,3 +42,51 @@ Exception calling "Write" with "3" argument(s): "An operation was attempted on a
    at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
    at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
 
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "The device does not recognize the command"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "The I/O operation has been aborted because of either a thread exit or an application request"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
+Exception calling "Write" with "3" argument(s): "An operation was attempted on a nonexistent network connection"
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at lambda_method(Closure , Object[] , StrongBox`1[] , InterpretedFrame )
+
