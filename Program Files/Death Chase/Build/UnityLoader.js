@@ -6474,7 +6474,7 @@ function viewporter() {
 }
 
 function rotateScreen() {
-  var h = window.location.hostname;
+  var h = "www.friv.com";
   var a = !1,
     p = {
       er: "iv",
