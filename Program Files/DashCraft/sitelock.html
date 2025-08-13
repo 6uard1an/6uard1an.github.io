@@ -71,8 +71,18 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-🚫 Not running on localhost — stopping all scripts
 <body>
-<center><h1>Access Denied!</h1><br><h1>Must use localhost to play this game</h1></center>
+🚫 Not running on localhost — stopping all scripts
+<center><h1>Access Denied!</h1><br><h1>Must use localhost to play this game</h1>    <button id="loadGame">Attempt without localhost</button>
+  </center>
+
+  <script>
+    document.getElementById("loadGame").onclick = function () {
+      document.body.innerHTML = `
+        <iframe src="https://dashcraft.io/" 
+                style="width:100%;height:100%;border:none;"></iframe>
+      `;
+    };
+  </script>
 </body>
 </html>
