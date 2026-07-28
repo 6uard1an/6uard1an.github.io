@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.amudi.app",
+      "sha256_cert_fingerprints": [
+        "34:4E:E0:B1:44:45:B9:D1:76:6B:95:C1:A1:E4:26:89:69:3E:2C:EF:A3:08:A1:77:03:5A:D9:16:04:AF:AF:89"
+      ]
+    }
+  }
+]

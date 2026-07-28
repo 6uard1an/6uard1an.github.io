@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Open in Amudi</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #1a2a40; color: #fff; }
+    main { width: min(420px, calc(100% - 40px)); text-align: center; }
+    a { display: inline-block; margin-top: 18px; padding: 12px 18px; border-radius: 12px; background: #d4af37; color: #1a2a40; font-weight: 800; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Opening Amudi…</h1>
+    <p>If Amudi is not installed, Google Play will open.</p>
+    <a id="storeLink" href="https://play.google.com/store/apps/details?id=com.amudi.app">Get Amudi</a>
+  </main>
+  <script>
+    const route = `${location.search || ""}${location.hash || ""}`;
+    const store = new URL("https://play.google.com/store/apps/details");
+    store.searchParams.set("id", "com.amudi.app");
+    store.searchParams.set("referrer", new URLSearchParams({ amudi_route: route }).toString());
+    document.getElementById("storeLink").href = store.href;
+    setTimeout(() => location.replace(store.href), 500);
+  </script>
+</body>
+</html>
