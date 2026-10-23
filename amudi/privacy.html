@@ -9,25 +9,26 @@
 </head>
 <body><main><article>
   <h1>Amudi Privacy Policy</h1>
-  <p><small>Effective and last updated: October 22, 2026</small></p>
+  <p><small>Effective and last updated: October 23, 2026</small></p>
   <p>This policy applies to the Amudi Android app and Amudi web reader. Amudi is the developer and data controller for the account and sync features described here. Questions may be sent to <a href="mailto:guardian.thisdevice@gmail.com">guardian.thisdevice@gmail.com</a>.</p>
 
   <h2>What Amudi stores</h2>
   <ul>
     <li><strong>On your device:</strong> downloaded books, bookmarks, notes, reading progress, reader settings, source sheets, learning-plan choices, reminder settings, and local diagnostic preferences.</li>
-    <li><strong>In your private cloud account when you sign in:</strong> your Firebase user ID, email address, optional Google display name and profile photo, plus a synchronized snapshot of bookmarks, notes, progress, settings, source sheets, and related update times.</li>
+    <li><strong>In your private cloud account when you sign in:</strong> your Firebase user ID, email address, optional Google display name and profile photo, plus a synchronized snapshot of bookmarks, notes, progress, settings, source sheets, verified book-ownership entitlements, and related update times.</li>
+    <li><strong>For book purchases:</strong> Google Play processes the payment. Amudi receives a product identifier, purchase token, purchase state, and an account-binding value so its secure verifier can confirm the purchase and save ownership to the correct Amudi account. Amudi does not receive your card or bank-account details.</li>
     <li><strong>For account security and delivery:</strong> Firebase and Google services may process authentication events, IP address, device/app metadata, integrity or App Check tokens, and service logs. GitHub receives ordinary request data when the app downloads library packages. A time-zone lookup is used only after the user agrees to an approximate IP-based zone check.</li>
     <li><strong>Reminders:</strong> Android reminders are scheduled locally. Web push is disabled unless configured and enabled by the user; if enabled, the push endpoint, chosen time, time zone, language, and study-program identifier are sent to the configured reminder service.</li>
   </ul>
 
   <h2>Why the data is used</h2>
-  <p>Amudi uses this information to authenticate users, synchronize their reading data across devices, deliver books, restore settings, schedule requested reminders, protect the library service, diagnose failures, and respond to support or deletion requests. Amudi does not sell personal data and does not use it for targeted advertising.</p>
+  <p>Amudi uses this information to authenticate users, synchronize their reading data across devices, verify purchases, save and restore book ownership, deliver books, restore settings, schedule requested reminders, protect the library service, diagnose failures, and respond to support or deletion requests. Amudi does not sell personal data and does not use it for targeted advertising.</p>
 
   <h2>Services that receive data</h2>
-  <p>Amudi uses Google Firebase Authentication, Cloud Firestore, App Check/Play Integrity, and Google sign-in; GitHub Releases and raw GitHub content for library delivery; Hebcal for calendar-based study information; and Time.Now for an optional approximate time-zone check. These providers process data under their own privacy and security terms. Content-source links open the named third-party website only when selected.</p>
+  <p>Amudi uses Google Firebase Authentication, Cloud Firestore, App Check/Play Integrity, and Google sign-in; Google Play Billing and the Google Play Developer API for purchases; an Amudi-operated Cloudflare Worker that verifies purchase tokens and writes account-bound ownership; GitHub Releases and raw GitHub content for library delivery; Hebcal for calendar-based study information; and Time.Now for an optional approximate time-zone check. These providers process data under their own privacy and security terms. Content-source links open the named third-party website only when selected.</p>
 
   <h2>Retention and deletion</h2>
-  <p>Local data remains until you delete books or personal data in Settings, clear the app’s storage, or uninstall the app. Cloud sync data remains while the account exists. In Settings → Account, “Delete account” first asks you to reauthenticate and then deletes the synchronized Firestore record and Firebase Authentication account. Local device data is separate and can be deleted with “Delete personal data.” You may also submit an external deletion request at <a href="https://6uard1an.github.io/amudi/account-deletion.html">Amudi’s account-deletion page</a>. Verified requests are normally completed within 30 days unless limited retention is required for security, fraud prevention, or law; any such retained records are isolated and deleted when no longer required.</p>
+  <p>Local data remains until you delete books or personal data in Settings, clear the app’s storage, or uninstall the app. Cloud sync data and Amudi entitlement records remain while the account exists. In Settings → Account, “Delete account” first asks you to reauthenticate and then deletes the synchronized Firestore record, stored Amudi entitlement records, and Firebase Authentication account. Local device data is separate and can be deleted with “Delete personal data.” You may also submit an external deletion request at <a href="https://6uard1an.github.io/amudi/account-deletion.html">Amudi’s account-deletion page</a>. Google may retain Play purchase records under Google’s own legal and accounting obligations. Verified requests are normally completed within 30 days unless limited retention is required for security, fraud prevention, or law; any such retained records are isolated and deleted when no longer required.</p>
 
   <h2>Your choices</h2>
   <p>You may use Amudi without a cloud account, decline the optional approximate time-zone check, decline notifications, export your local reading data, delete local personal data, sign out, or permanently delete the account. Device and platform settings can also revoke notification permissions.</p>
