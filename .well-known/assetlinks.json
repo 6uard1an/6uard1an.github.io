@@ -10,5 +10,20 @@
         "34:4E:E0:B1:44:45:B9:D1:76:6B:95:C1:A1:E4:26:89:69:3E:2C:EF:A3:08:A1:77:03:5A:D9:16:04:AF:AF:89"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.amudi.library",
+      "sha256_cert_fingerprints": [
+        "3C:0F:11:85:90:D1:D7:DE:0D:04:35:C0:6F:E8:09:AA:04:80:49:20:CC:85:2D:61:F0:59:3C:7F:B8:AF:A1:ED",
+        "39:23:F8:48:77:9A:75:18:FA:5E:2E:50:AD:DF:FD:12:CE:76:F8:3D:7D:82:66:64:B2:93:06:EC:2C:C2:00:E6",
+        "01:40:CC:43:94:F7:F5:67:53:E5:9E:AB:61:08:6B:C6:C6:E2:58:6A:81:13:FD:33:A1:33:3D:4E:4B:86:3D:EA"
+      ]
+    }
   }
 ]
